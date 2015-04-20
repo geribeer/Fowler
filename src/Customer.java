@@ -58,6 +58,7 @@ class Customer {
                     thisAmount += (each.getDaysRented() - 3) * 1.5;
                 break;
         }
+        
         return thisAmount;
     }
 
