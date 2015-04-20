@@ -1,5 +1,4 @@
-public class ChildrensPrice implements Price {
-
+public class ChildrensPrice extends Price {
 
     public int getPriceCode(){
         return Movie.CHILDRENS;

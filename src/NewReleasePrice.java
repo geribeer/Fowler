@@ -1,4 +1,4 @@
-public class NewReleasePrice{
+public class NewReleasePrice extends Price{
 	double getCharge(int daysRented){
         return daysRented * 3;
     }
