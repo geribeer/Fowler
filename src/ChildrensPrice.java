@@ -5,9 +5,11 @@ public class ChildrensPrice implements Price {
         return Movie.CHILDRENS;
     }
 
-    public double getCharge(int daysRented){
-         if (daysRented > 3) return (daysRented - 3 ) * 1.5;
-           else return 1.5;
+    double getCharge(int daysRented){
+        double result = 1.5;
+        if (daysRented > 3)
+            result += (daysRented - 3) * 1.5;
+        return result;
     }
     public int getFrequentRenterPoints(int daysRented) {
         return 1;
